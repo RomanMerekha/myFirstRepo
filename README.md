@@ -1,2 +1,0 @@
-# myFirstRepo
-Here is description
