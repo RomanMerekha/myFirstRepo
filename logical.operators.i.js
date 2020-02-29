@@ -8,3 +8,4 @@ console.log(false && false); // false
 
 let yo = 1;
 let name = "Ruslan lokh";
+let chlen = "Ruslan";
