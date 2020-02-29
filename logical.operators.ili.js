@@ -34,3 +34,21 @@ console.log(true || 'no matter what'); // возвращает true
 console.log(null || 1); // возвращает 1 (первое истинное значение)
 console.log(null || 0 || 1); // возвращает 1 (первое истиноое значение)
 console.log(undefined || null || 0); // возвращает 0 (поскольку все ложно, возвращается последнее значение)
+
+// Получаем первое истинное значение из списка переменных или выражений
+// Если у нас есть ряд переменных, которые содержат данные "null", "undefined", то с помощью || можем найти истинное значение
+
+let currenUser = null;
+let defaultUser = "John";
+let name123 = currenUser || defaultUser || "unnamed";
+console.log(name123);
+
+// И езще пару примерчиков
+
+let b;
+true || (b = 1);
+console.log(b); // undefined, потому что (b = 1) не вычисляется
+
+let z;
+false || (z = 1);
+console.log(z); // 1
